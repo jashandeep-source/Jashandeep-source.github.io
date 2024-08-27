@@ -1,33 +1,44 @@
   /* Additional Styling */
 
-  .navbar {
-    padding: 1rem 1rem; /* Increase the padding to make it taller */
-    font-size: 1.2rem; /* Make the text larger */
-  }
-  
-  /* Left-align the navigation items */
-  .navbar-nav {
-    margin-left: 30rem;
-  }
-  
-  .nav-item {
-    margin-left: 1.5rem; /* Space out the items */
-  }
-  
-  .navbar-brand {
-    font-size: 1.5rem; /* Make the brand/logo larger */
-  }
-  
-  /* Adjust link styles */
-  .nav-link {
+.navbar {
+    padding: 1rem; /* Maintain consistent padding */
+    font-size: 1.2rem; /* Larger text */
+}
+
+/* Align the navigation items for larger screens */
+.navbar-nav {
+    margin-left: auto; /* Automatically align items to the right on larger screens */
+}
+
+/* Adjustments for mobile view */
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        margin-left: 0; /* Remove margin on smaller screens */
+        text-align: center; /* Center items on smaller screens */
+    }
+
+    .nav-item {
+        margin-left: 0; /* Reset margin between items */
+        margin-bottom: 0.5rem; /* Space out items vertically */
+    }
+}
+
+/* Optional: Larger brand/logo */
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+/* Style adjustments for nav links */
+.nav-link {
     padding: 0.5rem 1rem;
-  }
-  
-  /* Optional: Style for active link */
-  .nav-link.active {
+}
+
+/* Optional: Style for active link */
+.nav-link.active {
     font-weight: bold;
-    color: #ffc107; /* Change this color as needed */
-  }
+    color: #ffc107;
+}
+
 body {
     font-family: Arial, sans-serif;
     padding-top: 56px; /* Height of the navbar to avoid content being hidden behind it */
